@@ -26,6 +26,14 @@ body {
 
 }
 
+.btn {
+    width: 100px;
+    text-align: center;
+    border: 1px solid #f20;
+    margin: 10px 0;
+    cursor: pointer;
+}
+
 /* .basic {
     position: relative;
     top: 100px;

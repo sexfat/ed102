@@ -42,11 +42,14 @@
     <h4>basic btn control</h4>
     <div class="box stop"></div>
 
-    <div id="btn_stop">stop</div>
-    <div id="btn_play">play</div>
+    <div id="btn_stop" class="btn">stop</div>
+    <div id="btn_play" class="btn">play</div>
+    <div id="btn_reverse" class="btn">reverse</div>
+    <div id="btn_timeScale" class="btn">timeScale</div>
+    <div id="btn_seek" class="btn">seek0</div>
 
 
-    
+
 
 
 
@@ -130,7 +133,7 @@
         function alerts() {
             alert();
         }
-        var tl = new TimelineMax({
+        var tl = new TimelinaddeMax({
             repeat: 1,
             // repeatDelay: 1,
             yoyo: true,
@@ -147,23 +150,42 @@
         }).to('.time01', 2, {
             x: 100,
             y: 100,
-            scale : 2,
+            scale: 2,
             ease: SteppedEase.config(2)
-        })   
-     var animation  =  TweenMax.to('.stop' ,1 , {
-           x:200,
-           repeat: -1
-       })  
-      var  btn_stop  = document.getElementById('btn_stop');
-      var  btn_play  = document.getElementById('btn_play');
-       btn_stop.onclick = function() {
-        animation.pause();
-       }
-       btn_play.onclick = function() {
-        animation.play();
-       }
+        });
 
+        // 動畫    
+        var animation = TweenMax.to('.stop', 1.2, {
+            x: 300,
+            repeat: -1
+        })
 
+        //控制動畫元件   
+        var btn_stop = document.getElementById('btn_stop');
+        var btn_play = document.getElementById('btn_play');
+        var btn_reverse = document.getElementById('btn_reverse');
+        var btn_timeScale = document.getElementById('btn_timeScale');
+        var btn_seek = document.getElementById('btn_seek');
+       // 停止
+        btn_stop.onclick = function () {
+            animation.pause();
+        }
+        //播放
+        btn_play.onclick = function () {
+            animation.play();
+        }
+        //倒帶
+        btn_reverse.onclick = function () {
+           animation.reverse(3); 
+        }
+        //加減速
+        btn_timeScale.onclick = function () {
+           animation.timeScale(1); 
+        } 
+        //到某一個影格
+        btn_seek.onclick = function () {
+           animation.seek(0); 
+        } 
 
 
     </script>
