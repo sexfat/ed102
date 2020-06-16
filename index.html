@@ -39,6 +39,16 @@
     <div class="box time01">1</div>
     <div class="box time02">2</div>
     <div class="box time03">3</div>
+    <h4>basic btn control</h4>
+    <div class="box stop"></div>
+
+    <div id="btn_stop">stop</div>
+    <div id="btn_play">play</div>
+
+
+    
+
+
 
 
 
@@ -124,7 +134,7 @@
             repeat: 1,
             // repeatDelay: 1,
             yoyo: true,
-            onComplete: alerts //callback
+            //onComplete: alerts //callback
         });
 
         tl.to('.time01', 1, {
@@ -139,7 +149,23 @@
             y: 100,
             scale : 2,
             ease: SteppedEase.config(2)
-        })        
+        })   
+     var animation  =  TweenMax.to('.stop' ,1 , {
+           x:200,
+           repeat: -1
+       })  
+      var  btn_stop  = document.getElementById('btn_stop');
+      var  btn_play  = document.getElementById('btn_play');
+       btn_stop.onclick = function() {
+        animation.pause();
+       }
+       btn_play.onclick = function() {
+        animation.play();
+       }
+
+
+
+
     </script>
 </body>
 
