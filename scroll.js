@@ -10,10 +10,10 @@ var m2 = TweenMax.to('.m_2', 1, {
 var scene01 = new ScrollMagic.Scene({
         triggerElement: "#trigger",
         offset: 300,
-        triggerHook : .5
+        triggerHook: .5
     }).setTween(m2)
     .addIndicators({
-    name : 'key_01'
+        name: 'key_01'
     }).addTo(controller);
 
 
@@ -22,39 +22,39 @@ var scene01 = new ScrollMagic.Scene({
 //動畫
 var timeline = new TimelineMax();
 
-timeline.to('.m_3' , 1 , {
-  x: 100  
-}).to('.m_3' ,1 , {
+timeline.to('.m_3', 1, {
+    x: 100
+}).to('.m_3', 1, {
     y: 100
-}).to('.m_3' ,1 , {
-   x: 100,
-   rotation : 360,
-   scale : 10
+}).to('.m_3', 1, {
+    x: 100,
+    rotation: 360,
+    scale: 10
 })
 
 //觸發事件
 var scene02 = new ScrollMagic.Scene({
-    triggerElement: "#trigger_01",
-    reverse : true
+        triggerElement: "#trigger_01",
+        reverse: true
 
 
-}).setTween(timeline)
-.addIndicators({
-name : 'key_02'
-}).addTo(controller);
+    }).setTween(timeline)
+    .addIndicators({
+        name: 'key_02'
+    }).addTo(controller);
 
 
 //場景3
 
-var m4 = TweenMax.to('.m_4' , 1, {
-  x: 300
+var m4 = TweenMax.to('.m_4', 1, {
+    x: 300
 });
 
-var m5 = TweenMax.to('.m_5' , 1, {
+var m5 = TweenMax.to('.m_5', 1, {
     x: 200,
     y: 100,
     backgroundColor: 'yellow'
-  })
+})
 
 
 
@@ -62,11 +62,49 @@ var m5 = TweenMax.to('.m_5' , 1, {
 
 //動態加入class
 var scene03 = new ScrollMagic.Scene({
-    triggerElement: "#trigger_02",
-    reverse : true
-}).setClassToggle('.section_04' ,'animaion') //動態加入class
-.setTween([m4 , m5]) //陣列放多段動畫
-.addIndicators({
-name : 'class_03'
-}).addTo(controller);
+        triggerElement: "#trigger_02",
+        reverse: true
+    }).setClassToggle('.section_04', 'animaion') //動態加入class
+    .setTween([m4, m5]) //陣列放多段動畫
+    .addIndicators({
+        name: 'class_03'
+    }).addTo(controller);
 
+
+//動態
+var stickmove  = new TimelineMax();
+
+stickmove.fromTo('.m_6', 1, {
+    stickmovex: 0,
+    opacity: 0
+}, {
+    x: 100,
+    opacity: 1
+}).fromTo('.m_7', 1, {
+    x: 0,
+    opacity: 0
+}, {
+    x: 100,
+    opacity: 1
+}).fromTo('.m_8', 1, {
+    x: 0,
+    opacity: 0
+
+}, {
+    x: 100,
+    opacity: 1
+})
+
+
+
+
+//固定住畫面
+var scene04 = new ScrollMagic.Scene({
+        triggerElement: "#trigger_03",
+        offset: 0,
+        triggerHook : 0,
+        duration: '300%'
+    }).setPin('.section_05').setTween(stickmove)
+    .addIndicators({
+        name: 'key_04'
+    }).addTo(controller);
