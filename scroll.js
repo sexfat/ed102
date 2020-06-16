@@ -48,7 +48,15 @@ name : 'key_02'
 
 var m4 = TweenMax.to('.m_4' , 1, {
   x: 300
-})
+});
+
+var m5 = TweenMax.to('.m_5' , 1, {
+    x: 200,
+    y: 100,
+    backgroundColor: 'yellow'
+  })
+
+
 
 
 
@@ -56,7 +64,8 @@ var m4 = TweenMax.to('.m_4' , 1, {
 var scene03 = new ScrollMagic.Scene({
     triggerElement: "#trigger_02",
     reverse : true
-}).setClassToggle('.section_04' ,'animaion').setTween(m4)
+}).setClassToggle('.section_04' ,'animaion') //動態加入class
+.setTween([m4 , m5]) //陣列放多段動畫
 .addIndicators({
 name : 'class_03'
 }).addTo(controller);
