@@ -1,12 +1,43 @@
-var controller  = new ScrollMagic.Controller();
+var controller = new ScrollMagic.Controller();
 
- var m2 = TweenMax.to('.m_2' , 1 , {
+var m2 = TweenMax.to('.m_2', 1, {
     x: 200,
-    backgroundColor: '#f20'
+    backgroundColor: '#f20',
+    width: 200 + 'px'
 });
 
+//第一個場景
+var scene01 = new ScrollMagic.Scene({
+        triggerElement: "#trigger",
+        offset: 300,
+        triggerHook : .5
+    }).setTween(m2)
+    .addIndicators({
+    name : 'key_01'
+    }).addTo(controller);
 
-new ScrollMagic.Scene({
-   triggerElement: "#trigger"
-}).setTween(m2).addIndicators().addTo(controller);
 
+// 第二個場景
+
+
+var timeline = new TimelineMax();
+
+timeline.to('.m_3' , 1 , {
+  x: 100  
+}).to('.m_3' ,1 , {
+    y: 100
+}).to('.m_3' ,1 , {
+   x: 100,
+   rotation : 360,
+   scale : 10
+})
+
+
+var scene02 = new ScrollMagic.Scene({
+    triggerElement: "#trigger_01",
+
+
+}).setTween(timeline)
+.addIndicators({
+name : 'key_02'
+}).addTo(controller);
