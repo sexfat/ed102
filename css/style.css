@@ -54,3 +54,13 @@ padding: 0;
 .section_03 {
     background-color: rgb(231, 255, 185); 
 } 
+
+.section_04 {
+    padding-top: 200px;
+   background-color: rgb(217, 194, 255);
+   transition: all 1s ease-in-out;
+}
+
+.section_04.animaion{
+   background-color: rgb(234, 7, 255); 
+}

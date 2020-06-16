@@ -42,3 +42,22 @@ var scene02 = new ScrollMagic.Scene({
 .addIndicators({
 name : 'key_02'
 }).addTo(controller);
+
+
+//場景3
+
+var m4 = TweenMax.to('.m_4' , 1, {
+  x: 300
+})
+
+
+
+//動態加入class
+var scene03 = new ScrollMagic.Scene({
+    triggerElement: "#trigger_02",
+    reverse : true
+}).setClassToggle('.section_04' ,'animaion').setTween(m4)
+.addIndicators({
+name : 'class_03'
+}).addTo(controller);
+
