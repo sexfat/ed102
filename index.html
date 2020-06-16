@@ -10,15 +10,18 @@
 <body>
     <h4>Basic</h4>
     <div class="box basic"></div>
+    <h4>basic from</h4>
+    <div class="box from"></div>
+    <h4>basic fromTo</h4>
+    <div class="box fromTo"></div>
       
 
     
 
     <script>
-            TweenMax.to('.basic' , 1 , { x:300 });
-
-
-
+            TweenMax.to('.basic' , 1  , { x:300});
+            TweenMax.from('.from' , 1  , { x:300});
+            TweenMax.fromTo('.fromTo' , 1  , { x:100} ,{x: 400});
     </script>
 </body>
 </html>
