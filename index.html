@@ -18,6 +18,13 @@
     <div class="box fromTo"></div>
     <h4>basic 屬性</h4>
     <div class="box attr"></div>
+    <h4>basic yoyo</h4>
+    <div class="box yoyo">true</div>
+    <div class="box noyoyo">false</div>
+    <h4>basic repeatDelay</h4>
+    <div class="box repeatDelay"></div>
+
+
 
 
 
@@ -42,7 +49,33 @@
             //  scale : 2,
             repeat: -1,
             ease: Power0.easeNone
+        });
+        TweenMax.to('.noyoyo', 2, {
+            x: 400,
+            repeat : -1,
+            yoyo : false,
+            ease: Back.easeOut
+        });
+        TweenMax.to('.yoyo', 2, {
+            x: 400,
+            repeat : -1,
+            yoyo : true,
+            ease: Back.easeOut
+        });
+        TweenMax.to('.repeatDelay' , 1 ,{
+                x: 200,
+                y: 200,
+                //這三個屬性是一起使用的
+                repeat : 2,
+                yoyo: true,
+                repeatDelay : 2,
+                //延遲幾秒
+                delay : 1
+
+
         })
+
+
     </script>
 </body>
 
