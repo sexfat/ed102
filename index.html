@@ -29,6 +29,20 @@
     <h4>basic rotationX</h4>
     <div class="box rotationX rect"></div>
 
+    <h4>basic staggerTo</h4>
+    <div class="box staggerto"></div>
+    <div class="box staggerto"></div>
+    <div class="box staggerto"></div>
+    <div class="box staggerto"></div>
+
+    <h4>basic TiimelineMax</h4>
+    <div class="box time01">1</div>
+    <div class="box time02">2</div>
+    <div class="box time03">3</div>
+
+
+
+
 
 
 
@@ -57,44 +71,75 @@
         });
         TweenMax.to('.noyoyo', 2, {
             x: 400,
-            repeat : 1,
-            yoyo : false,
+            repeat: 1,
+            yoyo: false,
             ease: Back.easeOut
         });
         TweenMax.to('.yoyo', 2, {
             x: 400,
-            repeat : 1,
-            yoyo : true,
+            repeat: 1,
+            yoyo: true,
             ease: Back.easeOut
         });
-        TweenMax.to('.repeatDelay' , 1 ,{
-                x: 200,
-                // y: 20 0,
-                //這三個屬性是一起使用的
-                repeat : 1,
-                yoyo: true,
-                repeatDelay : 1,
-                //延遲幾秒
-                delay : 1,
-                boxShadow : "0px 0px 40px red"
-                //透明度
-                // alpha : 0,
-                // ease: Elastic.easeOut
+        TweenMax.to('.repeatDelay', 1, {
+            x: 200,
+            // y: 20 0,
+            //這三個屬性是一起使用的
+            repeat: 1,
+            yoyo: true,
+            repeatDelay: 1,
+            //延遲幾秒
+            delay: 1,
+            boxShadow: "0px 0px 40px red"
+            //透明度
+            // alpha : 0,
+            // ease: Elastic.easeOut
         });
-         TweenMax.to('.rotation' , 1 , {
-             rotation:360,
-             repeat:1,
-             transformOrigin: 'center bottom' 
+        TweenMax.to('.rotation', 1, {
+            rotation: 360,
+            repeat: 1,
+            transformOrigin: 'center bottom'
 
-         })
-         TweenMax.to('.rotationX' , 2 , {
-             rotationX:360,
-             repeat:-1,
-             transformPerspective: 900,
-             transformOrigin: 'top center -200' 
-         })
+        })
+        TweenMax.to('.rotationX', 2, {
+            rotationX: 360,
+            repeat: 1,
+            transformPerspective: 900,
+            transformOrigin: 'top center -200'
+        });
 
 
+        TweenMax.staggerFromTo('.staggerto', 1, {
+            x: 100
+        }, {
+            x: 300
+        }, .9);
+
+
+
+        function alerts() {
+            alert();
+        }
+        var tl = new TimelineMax({
+            repeat: 1,
+            // repeatDelay: 1,
+            yoyo: true,
+            onComplete: alerts //callback
+        });
+
+        tl.to('.time01', 1, {
+            x: 100,
+            scale: 2,
+            ease: Elastic.easeOut
+        }).from('.time01', 1, {
+            y: 100,
+            ease: Elastic.easeOut
+        }).to('.time01', 2, {
+            x: 100,
+            y: 100,
+            scale : 2,
+            ease: SteppedEase.config(2)
+        })        
     </script>
 </body>
 
