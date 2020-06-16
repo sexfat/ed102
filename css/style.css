@@ -11,10 +11,19 @@ body {
     border-radius: 10px;
     margin-top: 10px;
 }
+.rect {
+   width: 160px;
+}
 
 .attr {
     position: relative;
     left: 200px
+}
+
+.rotationX {
+    position: relative;
+    left: 200px
+
 }
 
 /* .basic {
