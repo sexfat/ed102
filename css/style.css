@@ -11,6 +11,11 @@ body {
     margin-top: 10px;
 }
 
+.attr {
+    position: relative;
+    left: 200px
+}
+
 /* .basic {
     position: relative;
     top: 100px;
