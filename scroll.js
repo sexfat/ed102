@@ -19,7 +19,7 @@ var scene01 = new ScrollMagic.Scene({
 
 // 第二個場景
 
-
+//動畫
 var timeline = new TimelineMax();
 
 timeline.to('.m_3' , 1 , {
@@ -32,9 +32,10 @@ timeline.to('.m_3' , 1 , {
    scale : 10
 })
 
-
+//觸發事件
 var scene02 = new ScrollMagic.Scene({
     triggerElement: "#trigger_01",
+    reverse : true
 
 
 }).setTween(timeline)
