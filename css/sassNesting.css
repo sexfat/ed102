@@ -27,10 +27,12 @@
   width: 300px;
   padding: 10px;
   background-color: #f20;
+  cursor: pointer;
+  transition: .2s all ease-in;
 }
 
 .wrapper .blog .btn:hover {
-  background-color: #c40000;
+  background-color: #2bff00;
 }
 
 .wrapper .blog .btn::before {

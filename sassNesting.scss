@@ -1,32 +1,46 @@
-.wrapper{
+.wrapper {
     width: 100%;
+
     .blog {
         width: 450px;
+
         h1 {
             font-size: 30px;
         }
-        img{
+
+        img {
             width: 300px;
         }
+
         .title {
             font-size: 23px;
             font-weight: 300;
         }
-        .content{
-            font-size: 14px;}
+
+        .content {
+            font-size: 14px;
+        }
+
         .btn {
             width: 300px;
             padding: 10px;
-            background-color: #f20; 
-         &:hover {
-             background-color: rgb(196, 0, 0);
-         }
-         &::before  {
-             content: '';
-         }
-         &::after {
-             content: '';
-         }
+            background-color: #f20;
+            cursor: pointer;
+            transition: .2s all ease-in;
+
+            //偽元素
+
+            &:hover {
+                background-color: rgb(43, 255, 0);
+            }
+
+            &::before {
+                content: '';
+            }
+
+            &::after {
+                content: '';
+            }
 
         }
     }
