@@ -1,3 +1,10 @@
+$font-title : 30px;
+$font-blog-title : 20px;
+$font-blog-content : 14px;
+$font-blog-btn : 20px;
+$font-blog-btn--bcolor : rgb(0, 223, 167);
+
+
 .wrapper {
     width: 100%;
 
@@ -5,7 +12,7 @@
         width: 450px;
 
         h1 {
-            font-size: 30px;
+            font-size: $font-title;
         }
 
         img {
@@ -13,25 +20,26 @@
         }
 
         .title {
-            font-size: 23px;
+            font-size: $font-blog-title;
             font-weight: 300;
         }
 
         .content {
-            font-size: 14px;
+            font-size: $font-blog-content ;
         }
 
         .btn {
-            width: 300px;
+            width: 150px;
             padding: 10px;
-            background-color: #f20;
+            text-align: center;
+            background-color: $font-blog-btn--bcolor;
             cursor: pointer;
             transition: .2s all ease-in;
-
+            font-size: $font-blog-btn;
             //偽元素
-
+            //顏色函式
             &:hover {
-                background-color: rgb(43, 255, 0);
+                background-color:darken($font-blog-btn--bcolor , 15%);
             }
 
             &::before {
