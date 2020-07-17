@@ -34,8 +34,10 @@
         cursor: pointer;
         background-color: $bgc;
         transition: .2s all ease-in;
+        @content;
         &:hover {
             background-color: darken($bgc, 10%);
+           
         }
     }
 }
@@ -80,5 +82,8 @@
         @include btn(200px, #00f014, 13px);
         @include margin();
     }
-    @include btn-modules('#btn-error', 150px ,#f20 , 13px);
+    //@content 帶值到mixin
+    @include btn-modules('#btn-error', 150px ,#f20 , 13px){
+        border: 2px solid #971400;
+    }
 }
