@@ -7,7 +7,7 @@
     text-align: center;
 }
 
-@mixin btn($w , $bgc , $fontSize:null) {
+@mixin btn($w, $bgc, $fontSize:null) {
     width: $w;
     padding: 10px;
     font-size: $fontSize;
@@ -17,10 +17,32 @@
     cursor: pointer;
     background-color: $bgc;
     transition: .2s all ease-in;
+
     &:hover {
-       background-color: darken($bgc , 10%);
+        background-color: darken($bgc, 10%);
     }
 }
+
+@mixin btn-modules($class , $w, $bgc, $fontSize) {
+    #{$class} {
+        width: $w;
+        padding: 10px;
+        font-size: $fontSize;
+        text-align: center;
+        border-radius: 30px;
+        color: #fff;
+        cursor: pointer;
+        background-color: $bgc;
+        transition: .2s all ease-in;
+        &:hover {
+            background-color: darken($bgc, 10%);
+        }
+    }
+}
+
+
+
+
 
 
 //帶值
@@ -30,9 +52,9 @@
 
 
 @mixin margin-num($num) {
-    margin: $num auto; 
+    margin: $num auto;
     position: relative;
-    top : $num;
+    top: $num;
 }
 
 
@@ -53,9 +75,10 @@
         @include btn(100px, #0070f0);
         @include margin();
     }
+
     .btn-big {
-        @include btn(200px , #00f014 , 13px);
+        @include btn(200px, #00f014, 13px);
         @include margin();
     }
+    @include btn-modules('#btn-error', 150px ,#f20 , 13px);
 }
-
