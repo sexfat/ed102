@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAWA,AAAA,IAAI,CAAC;EAEH,SAAS,EADI,KAAK;EAElB,SAAS,EAAE,IAAI;EACf,MAAM,EAbE,IAAI,CAAC,IAAI,CAAC,IAAI,CAAC,IAAI;CAc5B",
+    "sources": [
+        "../sassVar.scss"
+    ],
+    "names": [],
+    "file": "sassVar.css"
+}

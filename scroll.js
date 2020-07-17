@@ -72,7 +72,7 @@ var scene03 = new ScrollMagic.Scene({
 
 
 //動態
-var stickmove  = new TimelineMax();
+var stickmove = new TimelineMax();
 
 stickmove.fromTo('.m_6', 1, {
     stickmovex: 0,
@@ -102,7 +102,7 @@ stickmove.fromTo('.m_6', 1, {
 var scene04 = new ScrollMagic.Scene({
         triggerElement: "#trigger_03",
         offset: 0,
-        triggerHook : 0,
+        triggerHook: 0,
         duration: '300%'
     }).setPin('.section_05').setTween(stickmove)
     .addIndicators({
@@ -113,22 +113,26 @@ var scene04 = new ScrollMagic.Scene({
 // 滾動視差
 
 var parallax = new TimelineMax();
-var parallax01 =  TweenMax.to('.m_9', 1,{ y: '-100%'});
-var parallax02 =  TweenMax.to('.m_10', 1,{ y: '100%'});
-var parallax03 =  TweenMax.to('.m_11', 1,{ y: '40%'});
+var parallax01 = TweenMax.to('.m_9', 1, {
+    y: '-100%'
+});
+var parallax02 = TweenMax.to('.m_10', 1, {
+    y: '100%'
+});
+var parallax03 = TweenMax.to('.m_11', 1, {
+    y: '40%'
+});
 
 
-parallax.add([parallax01 , parallax02 , parallax03]);
+parallax.add([parallax01, parallax02, parallax03]);
 
 
 
 
 var scene05 = new ScrollMagic.Scene({
-       triggerElement : '#trigger_04',
-        duration : '100%'
-}).setTween(parallax)
-.addIndicators({
-    name: 'key_05'
-}).addTo(controller);
- 
-
+        triggerElement: '#trigger_04',
+        duration: '100%'
+    }).setTween(parallax)
+    .addIndicators({
+        name: 'key_05'
+    }).addTo(controller);
