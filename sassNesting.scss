@@ -1,8 +1,4 @@
-$font-title : 30px;
-$font-blog-title : 20px;
-$font-blog-content : 14px;
-$font-blog-btn : 20px;
-$font-blog-btn--bcolor : rgb(0, 223, 167);
+@import  'var'; 
 
 
 .wrapper {
@@ -18,7 +14,6 @@ $font-blog-btn--bcolor : rgb(0, 223, 167);
         img {
             width: 300px;
         }
-
         .title {
             font-size: $font-blog-title;
             font-weight: 300;
@@ -41,11 +36,9 @@ $font-blog-btn--bcolor : rgb(0, 223, 167);
             &:hover {
                 background-color:darken($font-blog-btn--bcolor , 15%);
             }
-
             &::before {
                 content: '';
             }
-
             &::after {
                 content: '';
             }

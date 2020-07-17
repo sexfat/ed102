@@ -1,8 +1,9 @@
 {
     "version": 3,
-    "mappings": ";AAUA,UAAU;AACV,AAAA,IAAI,CAAC;EAEH,SAAS,EADI,IAAI;EAEjB,SAAS,EAAE,IAAI;EACf,MAAM,EAbE,IAAI,CAAC,IAAI,CAAC,IAAI,CAAC,IAAI;EAc3B,gBAAgB,EAXL,OAAO;CAYnB",
+    "mappings": ";AAEA,UAAU;AACV,AAAA,IAAI,CAAC;EAEH,SAAS,EADI,IAAI;EAEjB,SAAS,EAAE,IAAI;EACf,MAAM,ECLE,IAAI,CAAC,IAAI,CAAC,IAAI,CAAC,IAAI;EDM3B,gBAAgB,ECHL,OAAO;CDInB",
     "sources": [
-        "../sassVar.scss"
+        "../sassVar.scss",
+        "../_var.scss"
     ],
     "names": [],
     "file": "sassVar.css"

@@ -27,14 +27,14 @@
   width: 150px;
   padding: 10px;
   text-align: center;
-  background-color: #00dfa7;
+  background-color: #8a00da;
   cursor: pointer;
   transition: .2s all ease-in;
   font-size: 20px;
 }
 
 .wrapper .blog .btn:hover {
-  background-color: #00936e;
+  background-color: #5a008e;
 }
 
 .wrapper .blog .btn::before {
