@@ -1,20 +1,27 @@
-.box {
+.wrapper-mixin {
+  width: 800px;
+}
+
+.wrapper-mixin .box {
   margin: 0 auto;
   text-align: center;
 }
 
-.spec {
+.wrapper-mixin .spec {
   width: 300px;
   margin: 0 auto;
   text-align: center;
 }
 
-.btn {
-  width: 300px;
-  padding: 20px;
+.wrapper-mixin .btn {
+  width: 200px;
+  padding: 10px;
   color: #fff;
   background-color: #fa0000;
   margin: 0 auto;
   text-align: center;
+  margin: 50px auto;
+  position: relative;
+  top: 50px;
 }
 /*# sourceMappingURL=sassMixin.css.map */

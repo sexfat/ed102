@@ -8,22 +8,45 @@
     margin: 0 auto;
     text-align: center;
 }
+
 @mixin btn() {
-    width: 300px;
-    padding: 20px;
+    width: 200px;
+    padding: 10px;
     color: #fff;
     background-color: #fa0000;
     @include margin();
 }
 
-.box {
-    @include margin();
+
+
+@mixin padding($num) {
+    padding: $num;
 }
 
-.spec {
-    width: 300px;
-   @include margin();
+
+@mixin margin-num($num) {
+    margin: $num auto; 
+    position: relative;
+    top : $num;
 }
-.btn {
-    @include btn();
+
+
+
+.wrapper-mixin {
+    width: 800px;
+
+    .box {
+        @include margin();
+    }
+
+    .spec {
+        width: 300px;
+        @include margin();
+    }
+
+    .btn {
+        @include btn();
+        @include margin-num(50px);
+    }
 }
+
