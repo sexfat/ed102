@@ -1,0 +1,43 @@
+.wrapper {
+  width: 100%;
+}
+
+.wrapper .blog {
+  width: 450px;
+}
+
+.wrapper .blog h1 {
+  font-size: 30px;
+}
+
+.wrapper .blog img {
+  width: 300px;
+}
+
+.wrapper .blog .title {
+  font-size: 23px;
+  font-weight: 300;
+}
+
+.wrapper .blog .content {
+  font-size: 14px;
+}
+
+.wrapper .blog .btn {
+  width: 300px;
+  padding: 10px;
+  background-color: #f20;
+}
+
+.wrapper .blog .btn:hover {
+  background-color: #c40000;
+}
+
+.wrapper .blog .btn::before {
+  content: '';
+}
+
+.wrapper .blog .btn::after {
+  content: '';
+}
+/*# sourceMappingURL=sassNesting.css.map */

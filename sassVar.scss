@@ -6,12 +6,13 @@ $bg-color : (
   'yellow' : #ffd900,
   'green' : #73ff00
 ); // map 數值 
+$null : null; // 空值
 
-$null : null;
-
+/* 註解 */
 body {
-  $font-size : 210px;
+  $font-size : 20px;
   font-size: $font-size;
   max-width: 30px;
   margin: $margin;
+  background-color: map-get($bg-color , 'yellow' ) ;
 }
