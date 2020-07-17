@@ -1,0 +1,29 @@
+// function name(){
+// //函式
+// }
+
+
+//不帶值
+@mixin margin() {
+    margin: 0 auto;
+    text-align: center;
+}
+@mixin btn() {
+    width: 300px;
+    padding: 20px;
+    color: #fff;
+    background-color: #fa0000;
+    @include margin();
+}
+
+.box {
+    @include margin();
+}
+
+.spec {
+    width: 300px;
+   @include margin();
+}
+.btn {
+    @include btn();
+}

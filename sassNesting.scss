@@ -1,16 +1,12 @@
-@import  'var'; 
-
+@import  'var';
 
 .wrapper {
     width: 100%;
-
     .blog {
         width: 450px;
-
         h1 {
             font-size: $font-title;
         }
-
         img {
             width: 300px;
         }

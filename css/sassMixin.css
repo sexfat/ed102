@@ -1,0 +1,20 @@
+.box {
+  margin: 0 auto;
+  text-align: center;
+}
+
+.spec {
+  width: 300px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.btn {
+  width: 300px;
+  padding: 20px;
+  color: #fff;
+  background-color: #fa0000;
+  margin: 0 auto;
+  text-align: center;
+}
+/*# sourceMappingURL=sassMixin.css.map */
