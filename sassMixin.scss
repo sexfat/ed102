@@ -1,6 +1,4 @@
-// function name(){
-// //函式
-// }
+@import 'var';
 
 
 //不帶值
@@ -9,7 +7,7 @@
     text-align: center;
 }
 
-@mixin btn($w , $bgc , $fontSize) {
+@mixin btn($w , $bgc , $fontSize:null) {
     width: $w;
     padding: 10px;
     font-size: $fontSize;
@@ -20,7 +18,7 @@
     background-color: $bgc;
     transition: .2s all ease-in;
     &:hover {
-       background-color: darken($bgc , 10%); 
+       background-color: darken($bgc , 10%);
     }
 }
 
@@ -52,11 +50,11 @@
     }
 
     .btn {
-        @include btn(100px , #2e00d6 , 14px);
+        @include btn(100px, #0070f0);
         @include margin();
     }
     .btn-big {
-        @include btn(200px , #2e00d6 , 18px);
+        @include btn(200px , #00f014 , 13px);
         @include margin();
     }
 }

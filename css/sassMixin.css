@@ -16,36 +16,35 @@
 .wrapper-mixin .btn {
   width: 100px;
   padding: 10px;
-  font-size: 14px;
   text-align: center;
   border-radius: 30px;
   color: #fff;
   cursor: pointer;
-  background-color: #2e00d6;
+  background-color: #0070f0;
   transition: .2s all ease-in;
   margin: 0 auto;
   text-align: center;
 }
 
 .wrapper-mixin .btn:hover {
-  background-color: #2300a3;
+  background-color: #0058bd;
 }
 
 .wrapper-mixin .btn-big {
   width: 200px;
   padding: 10px;
-  font-size: 18px;
+  font-size: 13px;
   text-align: center;
   border-radius: 30px;
   color: #fff;
   cursor: pointer;
-  background-color: #2e00d6;
+  background-color: #00f014;
   transition: .2s all ease-in;
   margin: 0 auto;
   text-align: center;
 }
 
 .wrapper-mixin .btn-big:hover {
-  background-color: #2300a3;
+  background-color: #00bd10;
 }
 /*# sourceMappingURL=sassMixin.css.map */
