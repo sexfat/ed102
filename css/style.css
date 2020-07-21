@@ -534,6 +534,22 @@ h5 {
   background-image: url(./img/p4.png);
 }
 
+.j1-img {
+  background-image: url(./img/j1.png);
+}
+
+.j2-img {
+  background-image: url(./img/j2.png);
+}
+
+.j3-img {
+  background-image: url(./img/j3.png);
+}
+
+.j4-img {
+  background-image: url(./img/j4.png);
+}
+
 * {
   box-sizing: border-box;
 }
