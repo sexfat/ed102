@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAKA,AAAA,IAAI,CAAC;EACH,KAAK,EAAE,IAAW;EAClB,MAAM,EAAE,GAAQ;EAChB,SAAS,EAAE,KAAc;EACzB,IAAI,EAAG,CAAE;CACV",
+    "sources": [
+        "../sassOperator.scss"
+    ],
+    "names": [],
+    "file": "sassOperator.css"
+}

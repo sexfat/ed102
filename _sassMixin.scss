@@ -43,23 +43,16 @@
 }
 
 
-
-
-
-
 //帶值
 @mixin padding($num) {
     padding: $num;
 }
-
 
 @mixin margin-num($num) {
     margin: $num auto;
     position: relative;
     top: $num;
 }
-
-
 
 .wrapper-mixin {
     width: 800px;
@@ -84,6 +77,6 @@
     }
     //@content 帶值到mixin
     @include btn-modules('#btn-error', 150px ,#f20 , 13px){
-        border: 2px solid #971400;
+        border: 2px solid #00eee2;
     }
 }
