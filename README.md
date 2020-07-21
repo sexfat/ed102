@@ -434,6 +434,183 @@ $num : 110;
 }
 ```
 
+# 迴圈
+
+```css
+@for $var from 1 to 3 {
+  .mt-#{$var} {
+    margin-top: $var * 10px;
+  }
+}
+```
+
+start：迴圈的起始值，這裡為 1
+end：迴圈的結束值，這裡為 3
+to：處理方式為 start < end，不包含迴圈的結束值
+through：處理方式為 start <= end，包含迴圈的結束值
+
+# Grid 
+
+```css
+//  grid-col
+@mixin grids($key, $num) {
+    @for $i from 1 through $num {
+        .col-#{$key}-#{$i} {
+            width: floor(($i / $num) * 100%);
+            @content
+        }
+    }
+};
+```
+
+# 字體大小使用模組
+
+- #### 使用方式
+
+`@include titleH(16px);`
+
+```css
+@mixin titleH($font-size) {
+    h1 {
+        font-size: round($font-size * 4.5);
+    }
+
+    h2 {
+        font-size: round($font-size * 3);
+    }
+
+    h3 {
+        font-size: round($font-size * 2.8);
+    }
+
+
+    h4 {
+        font-size: round($font-size * 1.8);
+    }
+
+    h5 {
+        font-size: round($font-size * 1.1);
+    }
+}
+```
+
+
+# @each
+
+@each 指令的格式是 $var in <list> 
+$var 可以是任何變量名，比如 $length 或者 $name，而 <list> 是一連串的值，也就是值列表。
+
+- ####  使用 @each map 數值型態，要使用each 去撈裡面值
+
+
+```css
+  $titles : (
+    h1 : 40px,
+    h2 : 35px,
+    h3: 28px,
+    h4: 20px,
+    h5: 16px); // map數值型態
+```
+
+```css
+///=======  h1 - h5 font-size
+@mixin  title_module($titles){
+  @each $title, $value in $titles {
+    #{$title} {
+        font-size: $value;
+    }
+   }
+ };
+
+ @include title_module($titles);
+```
+
+
+
+- ####  使用 @each map 數值型態，要使用each 去撈裡顏色值
+
+
+```scss
+//變數
+$btnColor :(primary: #428bca, // #337ab7
+    success: #5cb85c,
+    info: #5bc0de,
+    warning: #f0ad4e,
+    danger: #d9534f);
+
+```
+
+
+```scss
+@mixin btnColor($btnColor) {
+    @each $key,
+    $color_val in $btnColor {
+        .btn-#{$key} {
+            background-color: $color_val;
+        }
+    }
+}
+```
+
+
+- #### 使用each 寫圖片路徑
+
+
+- 使用時機
+```scss
+@include img_bg(jpg, b1 b2 b3) {
+    display: inline;
+    border: 1px solid #333;
+}
+
+```
+
+```scss
+.bg-image {
+    width: 100%;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+@mixin img_bg($files, $list) {
+    @each $img in $list {
+        .#{$img}-img {
+            @if $files == jpg {
+                background-image:url(./img/#{$img}.jpg);
+            }
+            @else if $files == png {
+                background-image:url(./img/#{$img}.png);
+            }
+        }
+        @extend .bg-image;//繼承圖片屬性
+        @content; //放擴增屬性
+    }
+}
+```
+
+
+- #### @each 進階
+
+多組數值使用  in @each $var1, $var2,
+
+```scss
+@each $animal, $color, $cursor in (puma, black, default),
+                                  (sea-slug, blue, pointer),
+                                  (egret, white, move) {
+  .#{$animal}-icon {
+    background-image: url('/images/#{$animal}.png');
+    border: 2px solid $color;
+    cursor: $cursor;
+  }
+}
+```
+
+
+
+
+
 
 
 
