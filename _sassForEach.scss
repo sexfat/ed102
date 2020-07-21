@@ -8,7 +8,7 @@
 }
 
 
-//  grid-col 
+//  grid-col
 @mixin grids($key, $num) {
     @for $i from 1 through $num {
         .col-#{$key}-#{$i} {
@@ -16,19 +16,19 @@
             @content
         }
     }
-};
+}
+
+;
 
 
-
+//平板
 @media all and (min-width :767px) and (max-width:1200px) {
     @include grids(md, 12) {
-        display: block;
-        text-align: center;
+        font-size: 15px;
     }
 }
 
-
-
+//手機版
 @media all and (max-width :766px) {
     @include grids(xs, 12) {
         display: block;
