@@ -159,7 +159,9 @@ h5 {
   width: 55px;
 }
 
-body {
-  background-color: #000;
+.wrapper {
+  width: 1366px;
+  margin: 0 auto;
+  background-color: #333;
 }
 /*# sourceMappingURL=style.css.map */

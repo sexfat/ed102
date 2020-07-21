@@ -57,11 +57,33 @@ $num : 110;
 
 $backgroundColor : #000;
 
-body {
+@mixin bodyBgc($backgroundColor) {
     @if ($backgroundColor==black and $backgroundColor==#000) {
         background-color: $backgroundColor;
     }
     @else {
-        background-color: #fff;
+        background-color: $backgroundColor;
     }
+}
+
+
+
+
+
+@mixin layout($width) {
+    @if $width==100 {
+        width: 100%;
+        display: block;
+    }
+
+    @else {
+        width: $width + px;
+        margin: 0 auto;
+    }
+}
+
+
+.wrapper {
+    @include layout(1366);
+    @include bodyBgc(#333);
 }
