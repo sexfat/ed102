@@ -12,19 +12,26 @@
 @mixin grids($key, $num) {
     @for $i from 1 through $num {
         .col-#{$key}-#{$i} {
-            width: ($i / $num) * 100%;
+            width: floor(($i / $num) * 100%);
             @content
         }
     }
-}
+};
 
-;
+
+@include grids(xd,12){
+display: inline-block;
+background-color: #9dff00;
+height: 300px;
+};
 
 
 //平板
 @media all and (min-width :767px) and (max-width:1200px) {
     @include grids(md, 12) {
         font-size: 15px;
+        height: 300px;
+        
     }
 }
 
@@ -34,5 +41,6 @@
         display: block;
         text-align: center;
         font-size: 14px;
+        height: 300px;
     }
 }

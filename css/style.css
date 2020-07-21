@@ -234,129 +234,241 @@ h5 {
   width: 10px;
 }
 
+.col-xd-1 {
+  width: 8%;
+  display: inline-block;
+  background-color: #9dff00;
+  height: 300px;
+}
+
+.col-xd-2 {
+  width: 16%;
+  display: inline-block;
+  background-color: #9dff00;
+  height: 300px;
+}
+
+.col-xd-3 {
+  width: 25%;
+  display: inline-block;
+  background-color: #9dff00;
+  height: 300px;
+}
+
+.col-xd-4 {
+  width: 33%;
+  display: inline-block;
+  background-color: #9dff00;
+  height: 300px;
+}
+
+.col-xd-5 {
+  width: 41%;
+  display: inline-block;
+  background-color: #9dff00;
+  height: 300px;
+}
+
+.col-xd-6 {
+  width: 50%;
+  display: inline-block;
+  background-color: #9dff00;
+  height: 300px;
+}
+
+.col-xd-7 {
+  width: 58%;
+  display: inline-block;
+  background-color: #9dff00;
+  height: 300px;
+}
+
+.col-xd-8 {
+  width: 66%;
+  display: inline-block;
+  background-color: #9dff00;
+  height: 300px;
+}
+
+.col-xd-9 {
+  width: 75%;
+  display: inline-block;
+  background-color: #9dff00;
+  height: 300px;
+}
+
+.col-xd-10 {
+  width: 83%;
+  display: inline-block;
+  background-color: #9dff00;
+  height: 300px;
+}
+
+.col-xd-11 {
+  width: 91%;
+  display: inline-block;
+  background-color: #9dff00;
+  height: 300px;
+}
+
+.col-xd-12 {
+  width: 100%;
+  display: inline-block;
+  background-color: #9dff00;
+  height: 300px;
+}
+
 @media all and (min-width: 767px) and (max-width: 1200px) {
   .col-md-1 {
-    width: 8.33333%;
+    width: 8%;
     font-size: 15px;
+    height: 300px;
   }
   .col-md-2 {
-    width: 16.66667%;
+    width: 16%;
     font-size: 15px;
+    height: 300px;
   }
   .col-md-3 {
     width: 25%;
     font-size: 15px;
+    height: 300px;
   }
   .col-md-4 {
-    width: 33.33333%;
+    width: 33%;
     font-size: 15px;
+    height: 300px;
   }
   .col-md-5 {
-    width: 41.66667%;
+    width: 41%;
     font-size: 15px;
+    height: 300px;
   }
   .col-md-6 {
     width: 50%;
     font-size: 15px;
+    height: 300px;
   }
   .col-md-7 {
-    width: 58.33333%;
+    width: 58%;
     font-size: 15px;
+    height: 300px;
   }
   .col-md-8 {
-    width: 66.66667%;
+    width: 66%;
     font-size: 15px;
+    height: 300px;
   }
   .col-md-9 {
     width: 75%;
     font-size: 15px;
+    height: 300px;
   }
   .col-md-10 {
-    width: 83.33333%;
+    width: 83%;
     font-size: 15px;
+    height: 300px;
   }
   .col-md-11 {
-    width: 91.66667%;
+    width: 91%;
     font-size: 15px;
+    height: 300px;
   }
   .col-md-12 {
     width: 100%;
     font-size: 15px;
+    height: 300px;
   }
 }
 
 @media all and (max-width: 766px) {
   .col-xs-1 {
-    width: 8.33333%;
+    width: 8%;
     display: block;
     text-align: center;
     font-size: 14px;
+    height: 300px;
   }
   .col-xs-2 {
-    width: 16.66667%;
+    width: 16%;
     display: block;
     text-align: center;
     font-size: 14px;
+    height: 300px;
   }
   .col-xs-3 {
     width: 25%;
     display: block;
     text-align: center;
     font-size: 14px;
+    height: 300px;
   }
   .col-xs-4 {
-    width: 33.33333%;
+    width: 33%;
     display: block;
     text-align: center;
     font-size: 14px;
+    height: 300px;
   }
   .col-xs-5 {
-    width: 41.66667%;
+    width: 41%;
     display: block;
     text-align: center;
     font-size: 14px;
+    height: 300px;
   }
   .col-xs-6 {
     width: 50%;
     display: block;
     text-align: center;
     font-size: 14px;
+    height: 300px;
   }
   .col-xs-7 {
-    width: 58.33333%;
+    width: 58%;
     display: block;
     text-align: center;
     font-size: 14px;
+    height: 300px;
   }
   .col-xs-8 {
-    width: 66.66667%;
+    width: 66%;
     display: block;
     text-align: center;
     font-size: 14px;
+    height: 300px;
   }
   .col-xs-9 {
     width: 75%;
     display: block;
     text-align: center;
     font-size: 14px;
+    height: 300px;
   }
   .col-xs-10 {
-    width: 83.33333%;
+    width: 83%;
     display: block;
     text-align: center;
     font-size: 14px;
+    height: 300px;
   }
   .col-xs-11 {
-    width: 91.66667%;
+    width: 91%;
     display: block;
     text-align: center;
     font-size: 14px;
+    height: 300px;
   }
   .col-xs-12 {
     width: 100%;
     display: block;
     text-align: center;
     font-size: 14px;
+    height: 300px;
   }
+}
+
+* {
+  box-sizing: border-box;
 }
 /*# sourceMappingURL=style.css.map */
