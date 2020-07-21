@@ -55,7 +55,6 @@ $num : 110;
 }
 
 
-// $backgroundColor : #000;
 
 @mixin bodyBgc($backgroundColor:black) {
     @if ($backgroundColor==black and $backgroundColor == #000) {

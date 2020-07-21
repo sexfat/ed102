@@ -1,0 +1,39 @@
+
+
+
+
+//佔位符號
+%rect {
+  width: 100px;
+  height : 50px;
+}
+// .rect {
+//     width: 100px;
+//     height : 50px;
+//   }
+//佔位符號
+%textAlign {
+    text-align: center;
+    background-color: #333;
+}
+
+// .textAlign {
+//     text-align: center;
+//     background-color: #333;
+// }
+
+.green {
+    background-color: green;
+    @extend %rect;
+    @extend  %textAlign;
+    // @extend .rect;
+    // @extend  .textAlign
+}
+
+.red {
+   background-color: red;
+   @extend %rect;
+   @extend %textAlign;
+//    @extend .rect;
+//    @extend .textAlign;
+}

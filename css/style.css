@@ -164,4 +164,22 @@ h5 {
   margin: 0 auto;
   background-color: #333;
 }
+
+.green, .red {
+  width: 100px;
+  height: 50px;
+}
+
+.green, .red {
+  text-align: center;
+  background-color: #333;
+}
+
+.green {
+  background-color: green;
+}
+
+.red {
+  background-color: red;
+}
 /*# sourceMappingURL=style.css.map */
