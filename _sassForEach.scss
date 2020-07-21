@@ -15,14 +15,18 @@
             @content
         }
     }
-};
+}
+
+;
 
 //桌機
-@include grids(xd,12){
-display: inline-block;
-background-color: #9dff00;
-height: 300px;
-};
+@include grids(xd, 12) {
+    display: inline-block;
+    background-color: #9dff00;
+    height: 300px;
+}
+
+;
 
 
 //平板
@@ -30,7 +34,7 @@ height: 300px;
     @include grids(md, 12) {
         font-size: 15px;
         height: 300px;
-        
+
     }
 }
 
@@ -46,11 +50,41 @@ height: 300px;
 
 
 // extend
-$images: a1 a2 a3 a4 box feature;//list
+$images: a1 a2 a3 a4 boxer people sass array; //list
 
 @each $img in $images {
-      .#{$img}-img {
-          background-image:url(./img/#{$img}.jpg);
-         // @extend .bg-image;
-      } 
+    .#{$img}-img {
+        background-image:url(./img/#{$img}.jpg);
+        // @extend .bg-image;
+    }
 }
+
+// jpg or png
+@mixin img_bg($files , $list) {
+
+    @if $files==jpg {
+        @each $img in $list {
+            .#{$img}-img {
+                background-image:url(./img/#{$img}.jpg);
+                 @extend .bg-image;
+                 @content;
+            }
+        }
+    }
+    @else if $files== png {
+        @each $img in $list {
+            .#{$img}-img {
+                background-image:url(./img/#{$img}.png);
+                 @extend .bg-image;
+                 @content;
+            }
+        }
+    }
+}
+
+
+@include img_bg(jpg, b1 b2 b3){
+    display: inline;
+    border: 1px solid #333;
+};
+@include img_bg(png, p1 p2 p3 p4);

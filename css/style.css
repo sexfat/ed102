@@ -183,7 +183,7 @@ h5 {
   background-color: red;
 }
 
-.bg-image, .img_extend {
+.bg-image, .img_extend, .b1-img, .b2-img, .b3-img, .p1-img, .p2-img, .p3-img, .p4-img {
   width: 100%;
   background-position: center center;
   background-size: cover;
@@ -484,12 +484,54 @@ h5 {
   background-image: url(./img/a4.jpg);
 }
 
-.box-img {
-  background-image: url(./img/box.jpg);
+.boxer-img {
+  background-image: url(./img/boxer.jpg);
 }
 
-.feature-img {
-  background-image: url(./img/feature.jpg);
+.people-img {
+  background-image: url(./img/people.jpg);
+}
+
+.sass-img {
+  background-image: url(./img/sass.jpg);
+}
+
+.array-img {
+  background-image: url(./img/array.jpg);
+}
+
+.b1-img {
+  background-image: url(./img/b1.jpg);
+  display: inline;
+  border: 1px solid #333;
+}
+
+.b2-img {
+  background-image: url(./img/b2.jpg);
+  display: inline;
+  border: 1px solid #333;
+}
+
+.b3-img {
+  background-image: url(./img/b3.jpg);
+  display: inline;
+  border: 1px solid #333;
+}
+
+.p1-img {
+  background-image: url(./img/p1.png);
+}
+
+.p2-img {
+  background-image: url(./img/p2.png);
+}
+
+.p3-img {
+  background-image: url(./img/p3.png);
+}
+
+.p4-img {
+  background-image: url(./img/p4.png);
 }
 
 * {
