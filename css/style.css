@@ -236,103 +236,139 @@ h5 {
 
 @media all and (min-width: 767px) and (max-width: 1200px) {
   .col-md-1 {
-    width: 4.16667%;
-    display: block;
-  }
-  .col-md-2 {
     width: 8.33333%;
     display: block;
+    text-align: center;
   }
-  .col-md-3 {
-    width: 12.5%;
-    display: block;
-  }
-  .col-md-4 {
+  .col-md-2 {
     width: 16.66667%;
     display: block;
+    text-align: center;
   }
-  .col-md-5 {
-    width: 20.83333%;
-    display: block;
-  }
-  .col-md-6 {
+  .col-md-3 {
     width: 25%;
     display: block;
+    text-align: center;
   }
-  .col-md-7 {
-    width: 29.16667%;
-    display: block;
-  }
-  .col-md-8 {
+  .col-md-4 {
     width: 33.33333%;
     display: block;
+    text-align: center;
   }
-  .col-md-9 {
-    width: 37.5%;
-    display: block;
-  }
-  .col-md-10 {
+  .col-md-5 {
     width: 41.66667%;
     display: block;
+    text-align: center;
   }
-  .col-md-11 {
-    width: 45.83333%;
-    display: block;
-  }
-  .col-md-12 {
+  .col-md-6 {
     width: 50%;
     display: block;
+    text-align: center;
+  }
+  .col-md-7 {
+    width: 58.33333%;
+    display: block;
+    text-align: center;
+  }
+  .col-md-8 {
+    width: 66.66667%;
+    display: block;
+    text-align: center;
+  }
+  .col-md-9 {
+    width: 75%;
+    display: block;
+    text-align: center;
+  }
+  .col-md-10 {
+    width: 83.33333%;
+    display: block;
+    text-align: center;
+  }
+  .col-md-11 {
+    width: 91.66667%;
+    display: block;
+    text-align: center;
+  }
+  .col-md-12 {
+    width: 100%;
+    display: block;
+    text-align: center;
   }
 }
 
 @media all and (max-width: 766px) {
   .col-xs-1 {
-    width: 4.16667%;
-    display: block;
-  }
-  .col-xs-2 {
     width: 8.33333%;
     display: block;
+    text-align: center;
+    font-size: 14px;
   }
-  .col-xs-3 {
-    width: 12.5%;
-    display: block;
-  }
-  .col-xs-4 {
+  .col-xs-2 {
     width: 16.66667%;
     display: block;
+    text-align: center;
+    font-size: 14px;
   }
-  .col-xs-5 {
-    width: 20.83333%;
-    display: block;
-  }
-  .col-xs-6 {
+  .col-xs-3 {
     width: 25%;
     display: block;
+    text-align: center;
+    font-size: 14px;
   }
-  .col-xs-7 {
-    width: 29.16667%;
-    display: block;
-  }
-  .col-xs-8 {
+  .col-xs-4 {
     width: 33.33333%;
     display: block;
+    text-align: center;
+    font-size: 14px;
   }
-  .col-xs-9 {
-    width: 37.5%;
-    display: block;
-  }
-  .col-xs-10 {
+  .col-xs-5 {
     width: 41.66667%;
     display: block;
+    text-align: center;
+    font-size: 14px;
   }
-  .col-xs-11 {
-    width: 45.83333%;
-    display: block;
-  }
-  .col-xs-12 {
+  .col-xs-6 {
     width: 50%;
     display: block;
+    text-align: center;
+    font-size: 14px;
+  }
+  .col-xs-7 {
+    width: 58.33333%;
+    display: block;
+    text-align: center;
+    font-size: 14px;
+  }
+  .col-xs-8 {
+    width: 66.66667%;
+    display: block;
+    text-align: center;
+    font-size: 14px;
+  }
+  .col-xs-9 {
+    width: 75%;
+    display: block;
+    text-align: center;
+    font-size: 14px;
+  }
+  .col-xs-10 {
+    width: 83.33333%;
+    display: block;
+    text-align: center;
+    font-size: 14px;
+  }
+  .col-xs-11 {
+    width: 91.66667%;
+    display: block;
+    text-align: center;
+    font-size: 14px;
+  }
+  .col-xs-12 {
+    width: 100%;
+    display: block;
+    text-align: center;
+    font-size: 14px;
   }
 }
 /*# sourceMappingURL=style.css.map */

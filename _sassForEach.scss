@@ -8,22 +8,31 @@
 }
 
 
-@media all and (min-width :767px) and (max-width:1200px) {
-    @for $i from 1 through 12 {
-        .col-md-#{$i} {
-            width: ($i / 24) * 100%;
-            display: block;
+//  grid-col 
+@mixin grids($key, $num) {
+    @for $i from 1 through $num {
+        .col-#{$key}-#{$i} {
+            width: ($i / $num) * 100%;
+            @content
         }
+    }
+};
+
+
+
+@media all and (min-width :767px) and (max-width:1200px) {
+    @include grids(md, 12) {
+        display: block;
+        text-align: center;
     }
 }
 
 
 
 @media all and (max-width :766px) {
-    @for $i from 1 through 12 {
-        .col-xs-#{$i} {
-            width: ($i / 24) * 100%;
-            display: block;
-        }
+    @include grids(xs, 12) {
+        display: block;
+        text-align: center;
+        font-size: 14px;
     }
 }
