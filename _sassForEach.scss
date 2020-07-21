@@ -1,0 +1,29 @@
+// for (let i = 0 ;arr.length ; i++ ){}
+
+// for 迴圈
+@for $i from 1 through 10 {
+    .box-#{$i} {
+        width: $i * 1px;
+    }
+}
+
+
+@media all and (min-width :767px) and (max-width:1200px) {
+    @for $i from 1 through 12 {
+        .col-md-#{$i} {
+            width: ($i / 24) * 100%;
+            display: block;
+        }
+    }
+}
+
+
+
+@media all and (max-width :766px) {
+    @for $i from 1 through 12 {
+        .col-xs-#{$i} {
+            width: ($i / 24) * 100%;
+            display: block;
+        }
+    }
+}
