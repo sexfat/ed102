@@ -573,4 +573,24 @@ h5 {
 * {
   box-sizing: border-box;
 }
+
+.btn-primary {
+  background-color: #428bca;
+}
+
+.btn-success {
+  background-color: #5cb85c;
+}
+
+.btn-info {
+  background-color: #5bc0de;
+}
+
+.btn-warning {
+  background-color: #f0ad4e;
+}
+
+.btn-danger {
+  background-color: #d9534f;
+}
 /*# sourceMappingURL=style.css.map */

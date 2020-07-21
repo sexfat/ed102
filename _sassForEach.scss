@@ -70,7 +70,8 @@ $images: a1 a2 a3 a4 boxer people sass array; //list
             }
         }
     }
-    @else if $files == png {
+
+    @else if $files==png {
         @each $img in $list {
             .#{$img}-img {
                 background-image:url(./img/#{$img}.png);
@@ -80,14 +81,16 @@ $images: a1 a2 a3 a4 boxer people sass array; //list
         }
     }
 }
+
 //不一樣的寫法
 @mixin img_bgs($files, $list) {
     @each $img in $list {
         .#{$img}-img {
-            @if $files== jpg {
+            @if $files==jpg {
                 background-image:url(./img/#{$img}.jpg);
             }
-            @else if $files== png {
+
+            @else if $files==png {
                 background-image:url(./img/#{$img}.png);
             }
         }
@@ -108,23 +111,28 @@ $images: a1 a2 a3 a4 boxer people sass array; //list
 @include img_bg(png, p1 p2 p3 p4);
 @include img_bgs(png, j1 j2 j3 j4);
 
-$titles : (
-   h1 : 40px,
-   h2 : 35px,
-   h3: 28px,
-   h4: 20px,
-   h5: 16px
-);  // map
 
-//@mixin  title_module($titles){
-    @each $title , $value in $titles {
-         #{$title} {
-              font-size: $value;
-            }
+///=======  h1 - h5 font-size
+@mixin  title_module($titles){
+@each $title,
+$value in $titles {
+    #{$title} {
+        font-size: $value;
+    }
+   }
+ };
+
+ @include title_module($titles);
+
+
+
+
+@mixin btnColor($btnColor) {
+    @each $key,
+    $color_val in $btnColor {
+        .btn-#{$key} {
+            background-color: $color_val;
         }
-//}
-
-
-
-
+    }
+}
 
