@@ -55,21 +55,20 @@ $num : 110;
 }
 
 
-$backgroundColor : #000;
+// $backgroundColor : #000;
 
-@mixin bodyBgc($backgroundColor) {
-    @if ($backgroundColor==black and $backgroundColor==#000) {
-        background-color: $backgroundColor;
+@mixin bodyBgc($backgroundColor:black) {
+    @if ($backgroundColor==black and $backgroundColor == #000) {
+        background-color: black;
+    }
+    @else if ($backgroundColor == gray ){
+        background-color: #eee ;
     }
     @else {
         background-color: $backgroundColor;
     }
 }
-
-
-
-
-
+// layout
 @mixin layout($width) {
     @if $width==100 {
         width: 100%;
@@ -81,7 +80,6 @@ $backgroundColor : #000;
         margin: 0 auto;
     }
 }
-
 
 .wrapper {
     @include layout(1366);
