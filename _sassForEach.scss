@@ -107,3 +107,24 @@ $images: a1 a2 a3 a4 boxer people sass array; //list
 ;
 @include img_bg(png, p1 p2 p3 p4);
 @include img_bgs(png, j1 j2 j3 j4);
+
+$titles : (
+   h1 : 40px,
+   h2 : 35px,
+   h3: 28px,
+   h4: 20px,
+   h5: 16px
+);  // map
+
+//@mixin  title_module($titles){
+    @each $title , $value in $titles {
+         #{$title} {
+              font-size: $value;
+            }
+        }
+//}
+
+
+
+
+
