@@ -7,7 +7,6 @@
     }
 }
 
-
 //  grid-col
 @mixin grids($key, $num) {
     @for $i from 1 through $num {
@@ -18,7 +17,7 @@
     }
 };
 
-
+//桌機
 @include grids(xd,12){
 display: inline-block;
 background-color: #9dff00;
@@ -43,4 +42,15 @@ height: 300px;
         font-size: 14px;
         height: 300px;
     }
+}
+
+
+// extend
+$images: a1 a2 a3 a4 box feature;//list
+
+@each $img in $images {
+      .#{$img}-img {
+          background-image:url(./img/#{$img}.jpg);
+         // @extend .bg-image;
+      } 
 }

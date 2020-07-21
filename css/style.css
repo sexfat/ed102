@@ -468,6 +468,30 @@ h5 {
   }
 }
 
+.a1-img {
+  background-image: url(./img/a1.jpg);
+}
+
+.a2-img {
+  background-image: url(./img/a2.jpg);
+}
+
+.a3-img {
+  background-image: url(./img/a3.jpg);
+}
+
+.a4-img {
+  background-image: url(./img/a4.jpg);
+}
+
+.box-img {
+  background-image: url(./img/box.jpg);
+}
+
+.feature-img {
+  background-image: url(./img/feature.jpg);
+}
+
 * {
   box-sizing: border-box;
 }
