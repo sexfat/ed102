@@ -182,4 +182,15 @@ h5 {
 .red {
   background-color: red;
 }
+
+.bg-image, .img_extend {
+  width: 100%;
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.img_extend {
+  background-image: url("img/img.jpg");
+}
 /*# sourceMappingURL=style.css.map */

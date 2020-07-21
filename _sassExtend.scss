@@ -1,9 +1,9 @@
-
 //佔位符號
 %rect {
-  width: 100px;
-  height : 50px;
+    width: 100px;
+    height: 50px;
 }
+
 // .rect {
 //     width: 100px;
 //     height : 50px;
@@ -21,14 +21,39 @@
 .green {
     background-color: green;
     @extend %rect;
-    @extend  %textAlign;
+    @extend %textAlign;
     // @extend .rect;
     // @extend  .textAlign
 }
+
 .red {
-   background-color: red;
-   @extend %rect;
-   @extend %textAlign;
-//    @extend .rect;
-//    @extend .textAlign;
+    background-color: red;
+    @extend %rect;
+    @extend %textAlign;
+    //    @extend .rect;
+    //    @extend .textAlign;
+}
+
+
+.bg-image {
+    width: 100%;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+
+@mixin bgimage() {
+    width: 100%;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+.img_extend {
+    @extend .bg-image;
+    // @include bgimage();
+    background-image: url('img/img.jpg');
 }
